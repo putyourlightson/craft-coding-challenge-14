@@ -75,6 +75,8 @@ up:
 		cp -n example.env .env; \
 		docker compose up; \
     fi
+test: up
+	docker compose exec -it php su-exec www-data php craft pest
 %:
 	@:
 # ref: https://stackoverflow.com/questions/6273608/how-to-pass-argument-to-makefile-from-command-line
