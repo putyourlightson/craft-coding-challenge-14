@@ -1,5 +1,9 @@
 <?php
 
+/**
+ * Tests merging of URLs with paths.
+ */
+
 use modules\Module;
 
 test('Merging URL with path works', function () {
