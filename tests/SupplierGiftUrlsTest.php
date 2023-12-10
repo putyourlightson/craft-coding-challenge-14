@@ -2,52 +2,52 @@
 
 use modules\Module;
 
-test('Merging URL with path works', function() {
+test('Merging URL with path works', function () {
     $output = Module::getInstance()->mergeUrlWithPath(
-        'https://example.com/es',
-        'blog/my-cool-blog',
+        'https://SantasHelper.com/es',
+        'products/gifts/three-foot-candy-cane',
     );
 
     expect($output)
-        ->toBe('https://example.com/es/blog/my-cool-blog');
+        ->toBe('https://SantasHelper.com/es/products/gifts/three-foot-candy-cane');
 });
 
-test('Merging URL with overlapping path works', function() {
+test('Merging URL with overlapping path works', function () {
     $output = Module::getInstance()->mergeUrlWithPath(
-        'https://example.com/es',
-        'es/blog/my-cool-blog',
+        'https://SantasHelper.com/es',
+        'es/products/gifts/three-foot-candy-cane',
     );
 
     expect($output)
-        ->toBe('https://example.com/es/blog/my-cool-blog');
+        ->toBe('https://SantasHelper.com/es/products/gifts/three-foot-candy-cane');
 });
 
-test('Merging URL with trailing slash with overlapping path works', function() {
+test('Merging URL with trailing slash with overlapping path works', function () {
     $output = Module::getInstance()->mergeUrlWithPath(
-        'https://example.com/es/',
-        'es/blog/my-cool-blog',
+        'https://SantasHelper.com/es/',
+        'es/products/gifts/three-foot-candy-cane',
     );
 
     expect($output)
-        ->toBe('https://example.com/es/blog/my-cool-blog');
+        ->toBe('https://SantasHelper.com/es/products/gifts/three-foot-candy-cane');
 });
 
-test('Merging URL with overlapping path with leading slash works', function() {
+test('Merging URL with overlapping path with leading slash works', function () {
     $output = Module::getInstance()->mergeUrlWithPath(
-        'https://example.com/es',
-        '/es/blog/my-cool-blog',
+        'https://SantasHelper.com/es',
+        '/es/products/gifts/three-foot-candy-cane',
     );
 
     expect($output)
-        ->toBe('https://example.com/es/blog/my-cool-blog');
+        ->toBe('https://SantasHelper.com/es/products/gifts/three-foot-candy-cane');
 });
 
-test('Merging URL with trailing slash with overlapping path with leading slash works', function() {
+test('Merging URL with trailing slash with overlapping path with leading slash works', function () {
     $output = Module::getInstance()->mergeUrlWithPath(
-        'https://example.com/es/',
-        '/es/blog/my-cool-blog',
+        'https://SantasHelper.com/es/',
+        '/es/products/gifts/three-foot-candy-cane',
     );
 
     expect($output)
-        ->toBe('https://example.com/es/blog/my-cool-blog');
+        ->toBe('https://SantasHelper.com/es/products/gifts/three-foot-candy-cane');
 });
