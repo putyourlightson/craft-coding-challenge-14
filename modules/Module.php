@@ -14,7 +14,7 @@ class Module extends \yii\base\Module
     }
 
     /**
-     * Returns the URL merged with the path, ...
+     * Returns the URL merged with the path, without an overlapping suffix and prefix.
      */
     public function mergeUrlWithPath(string $url, string $path): string
     {
