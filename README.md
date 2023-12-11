@@ -1,9 +1,9 @@
 # Challenge #14 – Testing Santa’s Patience
 
-![Limbo](https://www.craftcodingchallenge.com/assets/images/limbo.jpg)
+![Santa Clause Laptop](https://www.craftcodingchallenge.com/assets/images/santa-clause-laptop.jpg)
 
 View the challenge description at:  
-https://www.craftcodingchallenge.com/challenge-14-where-in-the-world
+https://www.craftcodingchallenge.com/challenge-14-testing-santas-patience
 
 This repo extends the stellar [Spin Up Craft](https://github.com/nystudio107/spin-up-craft) template repo by @nystudio107.
 
